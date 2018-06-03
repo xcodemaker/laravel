@@ -25,3 +25,5 @@ Route::post('/register_post', 'HomeController@register_post');
 
 Route::get('/login', 'LoginController@login');
 Route::post('/login_post', 'LoginController@login_post');
+Route::get('/user_update/{id}', 'UserController@user_update');
+Route::get('/user_update_post/{id}', 'UserController@user_update_post');
