@@ -32,4 +32,9 @@ class HomeController extends Controller
         return "failed";
     }
     }
+    public  function home(){
+        //return view("register");
+        $users=User::all();
+        return view("home")->with(["user_data"=>$users]);
+    }
 }

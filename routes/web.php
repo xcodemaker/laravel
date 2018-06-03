@@ -20,6 +20,7 @@ Route::get('/', function () {
 // });
 
 Route::get('/register', 'HomeController@register');
+Route::get('/home', 'HomeController@home');
 Route::post('/register_post', 'HomeController@register_post');
 
 Route::get('/login', 'LoginController@login');

@@ -20,12 +20,12 @@ class LoginController extends Controller
         //return redirect()->intended('home');
         //dd("success");
         //home();
-        return view("home");
+        return redirect('/home');
        }else{
            return redirect('/login');
        }
     }
-    public  function home(){
-        return view("home");
-    }
+    // public  function home(){
+    //     return view("home");
+    // }
 }
